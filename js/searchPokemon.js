@@ -58,7 +58,7 @@ function ChooseTeam(pokemons){
     .reduce(flatten, [])
     .map( pokemon => pokemon.pokemon );
 
-	for(let i = 0; i < 6; i++) {
+	for(let i = 0; i < 4; i++) {
 		team.push( getRandomPokemon(pokemons) );
 	}
 
@@ -71,6 +71,8 @@ function ChooseTeam(pokemons){
 			showPokemon(pokemonData);
 		});
 }
+
+
   
 function getRandomPokemon(pokemonArray) {
 	return pokemonArray[ Math.floor(Math.random() * pokemonArray.length) ]; //Random pokemon
