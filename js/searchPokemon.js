@@ -2,10 +2,12 @@
 
 
 const fetchOption = {
-	headers: {
-		'Content-Type' : 'application/json'
+    headers: {
+        'Content-Type' : 'application/json'
+       
+        
 	},
-	mode: 'cors'
+    mode: 'cors',
 };
 
 $('form').on('submit', function(e){
@@ -15,14 +17,21 @@ $('form').on('submit', function(e){
     let types =$('input[type=text]').val().replace(/\s/g,'');
     types = types.split(',');
 
-    let trainerTypeCalls = types.map( elem => {
-        return fetch (`https://pokeapi.co/api/v2/type/${elem}/`, fetchOption);
+    
+    let trainerTypeCalls = types.map( elem =>
+         {
+        return fetch (` https://pokeapi.co/api/v2/type/${elem}/`, fetchOption);
+
+    
+    //https://pokeapi.co/api/v2/type
     });
 
     getPromiseData(trainerTypeCalls)
     .then((result) => {
         console.log(result);
         getBattlePokemon(result)
+
+        document.getElementById("myForm").reset(); //tar bor inskrivet input fast inte bilden.
     
 });
 });
@@ -58,7 +67,9 @@ function ChooseTeam(pokemons){
     .reduce(flatten, [])
     .map( pokemon => pokemon.pokemon );
 
-	for(let i = 0; i < 4; i++) {
+    $('.teamContainer').empty(); //empty the append so not new pokemon appears, not gonna catch em all :(
+
+	for(let i = 0; i < 3; i++) {
 		team.push( getRandomPokemon(pokemons) );
 	}
 
@@ -75,7 +86,10 @@ function ChooseTeam(pokemons){
 
   
 function getRandomPokemon(pokemonArray) {
-	return pokemonArray[ Math.floor(Math.random() * pokemonArray.length) ]; //Random pokemon
+
+
+
+	return pokemonArray[ Math.floor(Math.random() *(pokemonArray.length)) ]; //Random pokemon
 }
 
 const flatten = (a,b) => [...a,...b];
@@ -100,22 +114,26 @@ function getPromiseData(promisesArray){
 
 
 
-
-
-
 function showPokemon(pokemon) {
 	// loop through and display the pokemon!
 	pokemon.forEach( poke => {
      var $container = $('<div>').addClass('pokemon');
-     var $image = $('<img>').attr('src',`https://pokeres.bastionbot.org/images/pokemon/${poke.id}.png`);
+     var $image = $('<img>').attr('src',`https://pokeres.bastionbot.org/images/pokemon/${poke.id}.png`); //same as the api use from orignal url
      var $title = $('<h2>').text(poke.name);
      $container.append($image,$title);
      $('.teamContainer').append($container);
+
+   
 });
 }
 
+//https://assets.pokemon.com/assets/cms2/img/pokedex/detail //fails alot
+//https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/
+  //https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon //same as the api from school
+  https://pokeres.bastionbot.org/images/pokemon/${pokeID}
 
-//Music script  https://pokeres.bastionbot.org/images/pokemon/${pokeID}
+//Music script  /${pokeID}
+
 
 var audio = new Audio("./musik/pokemon.mp3 ");
 var audio2 = new Audio("./musik/pokemonRemake.mp3 ");

@@ -104,7 +104,11 @@ margin-top: -70px! important;
     padding-right: 50px;
 }
 
-
+.myForm h2{
+color: #2e4595;
+font-family: monospace;
+font-size: x-large;
+}
 .card {
     list-style: none;
     background-color: #f4f4f4a3;
@@ -403,9 +407,14 @@ h2.card-title-click{
         text-align: center;
         }
         form input{
-        width: 340px;
-        height: 30px;
-        margin-bottom: 10px;
+            width: 203px;
+            height: 40px;
+            margin-bottom: 10px;
+            font-size: larger;
+            font-family: emoji;
+            background-color: #fee29161;
+            border-style: dashed;
+            box-shadow: 2px -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(46 69 149 / 76%);
         }
 @media only screen and (max-width: 1000px) {
 

@@ -71,14 +71,14 @@ const displayPokemanPopup = (pokeman) => {
                 <p class="card-type">Type: ${type}</p>
                 <p class="card-measure">Height: ${pokeman.height} | Weight: ${pokeman.weight}</p>
                
-                <li class="card" onclick="abilityPokemon(${pokeman.abilities[0].ability.name})">
+                <li class="card"(${pokeman.abilities[0].ability.name})">   
                 <p class="card-ability">Ability:${pokeman.abilities[0].ability.name}</p>
                </li>
                 </div>
                 </div>
         </div>
     `;
-  pokedex.innerHTML = htmlString + pokedex.innerHTML;
+  pokedex.innerHTML = htmlString + pokedex.innerHTML;                   //Shall add abilityPokemon below but right now it's not defined  //onclick="abilityPokemon
 };
 
 const closePopup = () => {
