@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/icon" href="./favicon.ico">
+  <title>Max PokeSite</title>
+  <link rel="stylesheet" href="./css/pokemonMax.css" />
+</head>
+
+<body>
+  <div id="run"><span class="running_pickachu">
+        <input type="image" src="./img/running_pickachu.gif" onclick="this.src=('./img/running_pickachu.gif'); audio2.play () " 
+        ondblclick="this.src=('./img/running_pickachu.gif'); audio2.pause () " style="width:160px;">
+        </span></div>
+<div id="top">
+  <img src="./img/title.png" alt="Pokemon Title">
+
+</div>
+
+<div id="scrollTop" class="may">
+<img src="./img/floating_may.gif" alt="May" onclick="scrollToTop()">
+</div>
+
+
+
+<div id="cuteimg" class="containerTop">
+<img class ="jigglyhappy"src="./img/jigglyhappy.gif" alt="Pokemon">
+
+  <input type="image" class="sing"src="./img/jigglysing.gif" onclick="this.src=('./img/jigglysing.gif'); audio.play () " 
+ ondblclick="this.src=('./img/jigglysing.gif'); audio.pause () " style="background:none">
+
+<input type="image" class="clearify"src="./img/clear.gif" onclick="this.src=('./img/clear.gif'); audio3.play () " 
+ondblclick="this.src=('./img/clear.gif'); audio3.pause () " style="background:none">
+
+
+
+
+</div>
+<h1>A school project learning Api <br>by Max</h1>
+
+<form id="myForm" class="myForm" action="">
+    <h2>What type of pokemon do you want a team against?<br> you can also combine types</h2>
+    <input type="text" placeholder="fire,ground,ice etc.." >
+
+
+</form>
+
+<main class="teamContainer">
+
+</main>
+
+
+<div class="bg">
+
+  <div class="container">
+
+    
+    <ol id="pokedex"></ol>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/indexPokemon.js"></script>
+  <script src="./js/searchPokemon.js"></script>
+
+</body>
+
+</html>
+
+
+
+<!-- GIFS !^^ 
+<img class ="jigglyhappy"src="./img/bulba.gif" alt="Pokemon">
+<img class ="jigglyhappy"src="./img/floating_may.gif" alt="Pokemon">
+<img class ="jigglyhappy"src="./img/pickachu.gif" alt="Pokemon">
+<img class ="jigglyhappy"src="./img/ping.gif" alt="Pokemon">
+<img class ="jigglyhappy"src="./img/charmander.gif" alt="Pokemon">
+<img class ="jigglyhappy"src="./img/running_pickachu.gif" alt="Pokemon">
+<img class ="jigglyhappy"src="./img/smokeduck.gif" alt="Pokemon">-->
