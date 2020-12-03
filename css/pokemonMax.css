@@ -28,7 +28,8 @@ body {
 
 
 .jigglyhappy{
-    width: 266px;
+    width: 221px;
+    margin-top: -89px;
 
 }
 .sing{
@@ -40,10 +41,18 @@ body {
 
     position: fixed;
     margin-top: -300px;
-    right: -150px;
+    right: -73px;
     bottom: 1px;
     cursor: pointer;
     z-index: 2;
+}
+.may img{
+
+    width:380px;
+}
+
+.pich{
+    width: 160px;
 }
 
 .running_pickachu {
@@ -53,11 +62,14 @@ body {
           width: 160px;
           margin-top: 7px;
           z-index: 1;
-          left: -10%
+          left: -10%;
+          margin-top: 0px;
+        
          
       
       }
       
+
       #run {
         position: absolute;
         -webkit-animation: run 12s linear 2s infinite;
@@ -91,14 +103,14 @@ margin-top: -70px! important;
 }
 
 #top{
-    width: fit-content;
-    height: 320px;
+    height: 265px;
     margin: auto;
+    width: fit-content;
 }
 #top img{
     background-color: white;
     width: auto;
-    height: 550px;
+    height: 387px;
     margin: auto;
     padding-left: 50px;
     padding-right: 50px;
@@ -169,7 +181,7 @@ font-size: x-large;
 
 .container {
     margin: 0 auto;
-    width: 1000px;
+    max-width:1000px;
     height: auto;
     padding-top: 1px;
 }
@@ -191,6 +203,7 @@ h1 {
     margin: auto;
     position: relative;
     padding-bottom: 30px;
+    width: fit-content;
 
 }
 
@@ -232,7 +245,7 @@ h1 {
 
 #closeBtn {
     position: absolute;
-    top: 154px;
+    top: 170px;
     height: 67px;
     margin: auto;
     background-color: orangered;
@@ -271,6 +284,15 @@ p.card-measure{
     padding-top: 10px;
 
 
+}
+
+.card-ability p{
+    width: 200px;
+    font-size: 30px;
+    /* text-align: end; */
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 
@@ -322,8 +344,14 @@ p.card-measure{
 }
 
 
+.boxitemssecond img {
+    height: 180px;
+    margin-top: -41px;
+    margin-bottom: 2px;
+}
 
-p.card-ability:first-line {
+
+.card-ability:first-line {
     font-size: 20px;
     text-transform: capitalize;
 }
@@ -416,6 +444,17 @@ h2.card-title-click{
             border-style: dashed;
             box-shadow: 2px -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(46 69 149 / 76%);
         }
+
+        .submitButton {
+            width: 87px;
+            height: 47px;
+            margin-bottom: 10px;
+            font-size: larger;
+            font-family: emoji;
+            background-color: #b7fe9161;
+            border-style: double;
+            box-shadow: 2px -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(46 69 149 / 76%);
+        }
 @media only screen and (max-width: 1000px) {
 
 
@@ -425,9 +464,11 @@ h2.card-title-click{
         margin: 0 auto;
         font-family: rubik;
         color: white;
-        width: 1000px;
+        width: 100%;
         margin: auto;
     }
+
+
 
 .bg {
     background-image: url(../img/grass.png);
@@ -435,17 +476,124 @@ h2.card-title-click{
     background-position: center;
     background-repeat: inherit;
     margin: auto;
-    width: fit-content;
 }
+
+
+@-webkit-keyframes run {
+    0% { left: -10%; opacity: 1;}
+    98%{ left : 80%; opacity: 1}
+    100%{ left : 85%; opacity: 0}
+
+}
+@keyframes run {
+    0% { left: -10%; opacity: 1;}
+    98%{ left : 80%; opacity: 1}
+    100%{ left : 85%; opacity: 0}
+}
+
+
 
 }
 
 @media only screen and (max-width: 600px) {
 
+
+
+    h2 {
+        font-size: medium;
+    }
+
+    .jigglyhappy {
+        width: 156px;
+        margin-top: -89px;
+    }
+
+    .pokemon img {
+        width: 90px;
+        height: auto;
+    }
+
+    .myForm h2{
+        color: #2e4595;
+        font-family: monospace;
+        font-size: larger;
+        }
+
+    .teamContainer p {
+        font-size: large;
+        text-align: center;
+    }
+
+    .teamContainer {
+        font-size: large !important;
+        text-align: center;
+    }
+
+    .may {
+        position: fixed;
+        margin-top: -300px;
+        right: -12px;
+        bottom: 1px;
+        cursor: pointer;
+        z-index: 2;
+        width: 90px;
+    }
+    .may img{
+
+        
+        width: 200px;
+        margin-left: -57px;
+    }
+
+    .boxitemssecond img{
+        height: 200px;
+        margin-top: -41px;
+        margin-bottom: 2px;
+    }
+
+    .outerboxitemsecond{
+        width: 92%;
+        margin: 0px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        height: auto;
+        border-radius: 5%;
+        border: solid;
+        background-color: #ffb6ac;
+    }
+
+    p.card-type {
+  
+        width: inherit;
+        font-size: 29px;
+        height: 69px;
+        margin-bottom: 12px;
+    }
+    p.card-measure {
+        width: inherit;
+        font-size: 22px;
+        height: 47px;
+    }
+  
+    
+    .card-ability p{
+        width: 461px;
+        font-size: 35px;
+    }
+    .card p {
+        font-size: 21px;
+    }
+    
+    h2.card-title-click {
+        font-weight: bold;
+        font-size: 39px;
+    }
+
 #pokedex {
-    width: 92%;
+  
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(246px, 313px));
     grid-template-rows: repeat(52, 400px);
     grid-gap: 20px;
 }
@@ -457,24 +605,39 @@ h2.card-title-click{
     opacity: 0;
 
 }
+.running_pickachu {
+    margin-top: 1;
+    position: absolute;
+    height: auto;
+    width: fit-content;
+    margin-top: 7px;
+    z-index: 1;
+    margin-top: 60px;
+}
+
+
+.pich{
+    width: 100px;
+}
+
 @-webkit-keyframes run {
     0% { left: -10%; opacity: 1;}
-    98%{ left : 800px; opacity: 1}
-    100%{ left : 850px; opacity: 0}
+    98%{ left : 70%; opacity: 1}
+    100%{ left : 75%; opacity: 0}
 
 }
 @keyframes run {
     0% { left: -10%; opacity: 1;}
-    98%{ left : 800px; opacity: 1}
-    100%{ left : 850px; opacity: 0}
+    98%{ left : 70%; opacity: 1}
+    100%{ left : 75%; opacity: 0}
 }
   
 #closeBtn {
     position: absolute;
-    top: -255px;
+    top: -245px;
     height: inherit;
     margin: auto;
-    right: -1%;
+    right: 0%;
     background-color: orangered;
     padding: 9px 20px;
     border: none;
@@ -491,12 +654,44 @@ h2.card-title-click{
 .popup {
     position: fixed;
     z-index: 2;
+    padding-top: 26px;
     height: -webkit-fill-available;
-    width: inherit;
+    width: initial;
     background: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url(../img/cardBackground.png) no-repeat center;
+}
+
+#top img {
+    height: 160px;
+   
+}
+#cuteimg {
+   
+    margin-bottom: -38px;
+    
+
+    
+}
+#cuteimg img {
+   
+    width: 170px;
+    margin-left: -38px;
+}
+
+.clearify {
+   width: 70px;
+}
+.sing{
+    margin-left: -15px;
+    width: 82px;
+    margin-top: -23px;
+}
+#top {
+    
+    height: 182px;
+   
 }
 }

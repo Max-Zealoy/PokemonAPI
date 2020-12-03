@@ -135,8 +135,14 @@ function showPokemon(pokemon) {
 //Music script  /${pokeID}
 
 
-var audio = new Audio("./musik/pokemon.mp3 ");
-var audio2 = new Audio("./musik/pokemonRemake.mp3 ");
+var audio =  new Audio("./musik/pokemon.mp3 ");
+var audio2 = new Audio("./musik/PokemonRemake.mp3 ");
 var audio3 = new Audio("./musik/pokemonJapanese.mp3 ");
+var audio4 = new Audio("./musik/Pikachu.mp3 ");
 audio.oncanplaythrough = function ( ) { }
 audio.onended = function ( ) { }
+
+
+
+
+
