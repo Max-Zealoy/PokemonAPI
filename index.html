@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" type="image/icon" href="./favicon.ico">
   <title>Max PokeSite</title>
   <link rel="stylesheet" href="./css/pokemonMax.css" />
@@ -40,10 +39,10 @@ ondblclick="this.src=('./img/clear.gif'); audio3.pause () " style="background:no
 </div>
 <h1>A school project learning Api <br>by Max</h1>
 
-<form id="myForm" class="myForm" action="">
+<form id="myForm" class="myForm">
     <h2>What type of pokemon do you want a team against?<br> you can also combine types</h2>
-    <input type="text" placeholder="fire,ground,ice etc.." >
-    <input type='submit' class="submitButton" value="Search" />
+    <input type="text" autocapitalize="none" id="input" class="small" placeholder="fire,ground,ice etc.." >
+    <button id="add" type='submit' class="submitButton" value="Search">Search</button>
 
 </form>
 
@@ -62,6 +61,7 @@ ondblclick="this.src=('./img/clear.gif'); audio3.pause () " style="background:no
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script src="./js/indexPokemon.js"></script>
   <script src="./js/searchPokemon.js"></script>
 

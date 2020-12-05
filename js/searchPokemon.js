@@ -10,9 +10,12 @@ const fetchOption = {
     mode: 'cors',
 };
 
-$('form').on('submit', function(e){
 
+
+var input = document.getElementById("add");
+add.addEventListener("click", function(e) {
     e.preventDefault();
+  
 
     let types =$('input[type=text]').val().replace(/\s/g,'');
     types = types.split(',');
@@ -20,7 +23,7 @@ $('form').on('submit', function(e){
     
     let trainerTypeCalls = types.map( elem =>
          {
-        return fetch (` https://pokeapi.co/api/v2/type/${elem}/`, fetchOption);
+        return fetch (`https://pokeapi.co/api/v2/type/${elem}/`, fetchOption);
 
     
     //https://pokeapi.co/api/v2/type
@@ -32,7 +35,7 @@ $('form').on('submit', function(e){
         getBattlePokemon(result)
 
         document.getElementById("myForm").reset(); //tar bor inskrivet input fast inte bilden.
-    
+      
 });
 });
 
@@ -88,8 +91,8 @@ function ChooseTeam(pokemons){
 function getRandomPokemon(pokemonArray) {
 
 
-
-	return pokemonArray[ Math.floor(Math.random() *(pokemonArray.length)) ]; //Random pokemon
+ 
+	return pokemonArray[Math.floor(0.1 * Math.random() *(pokemonArray.length)) ]; //Random pokemon
 }
 
 const flatten = (a,b) => [...a,...b];
