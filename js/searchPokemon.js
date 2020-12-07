@@ -120,20 +120,25 @@ function getPromiseData(promisesArray){
 function showPokemon(pokemon) {
 	// loop through and display the pokemon!
 	pokemon.forEach( poke => {
-     var $container = $('<div>').addClass('pokemon');
-     var $image = $('<img>').attr('src',`https://pokeres.bastionbot.org/images/pokemon/${poke.id}.png`); //same as the api use from orignal url
-     var $title = $('<h2>').text(poke.name);
-     $container.append($image,$title);
-     $('.teamContainer').append($container);
 
+     var $next = `<button onclick="selectPokemon(${poke.id})"class="moreButton">Data</button>`  
+     var $container = $('<div>').addClass('pokemon');
+     var $image =$('<img class="titleImg">').attr('src',`https://pokeres.bastionbot.org/images/pokemon/${poke.id}.png`); //same as the api use from orignal url
+     var $title = `<h2 class="titleCenter">${poke.name}</h2>`
+     $container.append($image,$title, $next);
+    
+     $('.teamContainer').append($container);
+    
+     
    
 });
 }
 
+
 //https://assets.pokemon.com/assets/cms2/img/pokedex/detail //fails alot
 //https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/
   //https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon //same as the api from school
-  https://pokeres.bastionbot.org/images/pokemon/${pokeID}
+  //https://pokeres.bastionbot.org/images/pokemon/${pokeID}
 
 //Music script  /${pokeID}
 
