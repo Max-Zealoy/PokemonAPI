@@ -115,7 +115,8 @@ height: 39px;
 margin-bottom: 10px;
 text-align: center;
 font-size: larger;
-font-family: cursive;
+font-weight: 600;
+font-family: emoji;
 background-color: #7cc4ea8c;
 border-style: double;
 box-shadow: 2px -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(61 98 216 / 76%);
@@ -481,7 +482,7 @@ h2.card-title-click{
             border-style: double;
             box-shadow: 2px -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(46 69 149 / 76%);
         }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 
 
 
@@ -507,14 +508,14 @@ h2.card-title-click{
 
 @-webkit-keyframes run {
     0% { left: -10%; opacity: 1;}
-    98%{ left : 80%; opacity: 1}
-    100%{ left : 85%; opacity: 0}
+    98%{ left : 76%; opacity: 1}
+    100%{ left : 78%; opacity: 0}
 
 }
 @keyframes run {
     0% { left: -10%; opacity: 1;}
-    98%{ left : 80%; opacity: 1}
-    100%{ left : 85%; opacity: 0}
+    98%{ left : 76%; opacity: 1}
+    100%{ left : 78%; opacity: 0}
 }
 
 
@@ -651,13 +652,13 @@ h2.card-title-click{
 @-webkit-keyframes run {
     0% { left: -10%; opacity: 1;}
     98%{ left : 70%; opacity: 1}
-    100%{ left : 75%; opacity: 0}
+    100%{ left : 72%; opacity: 0}
 
 }
 @keyframes run {
     0% { left: -10%; opacity: 1;}
     98%{ left : 70%; opacity: 1}
-    100%{ left : 75%; opacity: 0}
+    100%{ left : 72%; opacity: 0}
 }
   
 #closeBtn {
